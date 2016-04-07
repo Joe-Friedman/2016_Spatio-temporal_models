@@ -1,6 +1,6 @@
 
-setwd( "C:/Users/James.Thorson/Desktop/Project_git/2016_Spatio-temporal_models/Week 2 -- mixed-effects/Lecture 2" )
-Use_REML = TRUE
+setwd( "C:/Users/jrfried/Documents/2016_Spatio-temporal_models/Week 2 -- mixed-effects/Lecture 2" )
+Use_REML = F
 
 ######################
 # Simulate data

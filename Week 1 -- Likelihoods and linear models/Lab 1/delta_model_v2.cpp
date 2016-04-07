@@ -14,7 +14,7 @@ Type objective_function<Type>::operator() ()
 {
   // Data
   DATA_VECTOR( y_i );
-  DATA_MATRIX( X_ij )
+  DATA_MATRIX( X_ij ) 
   DATA_VECTOR( predTF_i );
 
   // Parameters
@@ -39,6 +39,7 @@ Type objective_function<Type>::operator() ()
     if(y_i(i)!=0) jnll_i(i) -= log( 1-zero_prob ) + dlognorm( y_i(i), linpred_i(i), logsd, true );
     // Running counter
     if( predTF_i(i)==0 ) jnll += jnll_i(i);
+	//simply calculate the nll for all predicted points
     if( predTF_i(i)==1 ) pred_jnll += jnll_i(i);
   }
 
@@ -48,5 +49,6 @@ Type objective_function<Type>::operator() ()
   REPORT( linpred_i );
   REPORT( pred_jnll );
   REPORT( jnll_i );
+  //returns jnll, so that's what gets optimized, although pred_jnll is also produced
   return jnll;
 }

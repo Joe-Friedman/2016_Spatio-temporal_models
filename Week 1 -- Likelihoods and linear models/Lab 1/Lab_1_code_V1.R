@@ -1,5 +1,5 @@
 
-setwd( "C:/Users/James.Thorson/Desktop/Project_git/2016_Spatio-temporal_models/Week 1 -- Likelihoods and linear models/Lab 1" )
+setwd( "C:/Users/jrfried/Documents/2016_Spatio-temporal_models/Week 1 -- Likelihoods and linear models/Lab 1" )
 library(TMB)
 
 ###########
@@ -91,7 +91,7 @@ contour(x=X, y=Y, z=Z, levels=seq(0,1000,by=10)^3+1)
 
 #devtools::install_github("nwfsc-assess/geostatistical_delta-GLMM")
 library( SpatialDeltaGLMM )
-
+library(TMB)
 #
 data(WCGBTS_Canary_example)
 CPUE = WCGBTS_Canary_example$HAUL_WT_KG
