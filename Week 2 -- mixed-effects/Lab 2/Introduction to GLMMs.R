@@ -1,5 +1,5 @@
 
-setwd( "C:/Users/James.Thorson/Desktop/Project_git/2016_classes_private/Spatio-temporal models/Week 2 -- mixed-effects/Lab 2" )
+setwd( "C:/Users/jrfried/Documents/2016_Spatio-temporal_models/Week 2 -- mixed-effects/Lab 2/" )
 Use_REML = TRUE
 
 ############

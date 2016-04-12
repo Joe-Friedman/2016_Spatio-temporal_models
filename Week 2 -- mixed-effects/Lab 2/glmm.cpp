@@ -29,6 +29,7 @@ Type objective_function<Type>::operator() ()
   }
   
   // Reporting
+  // if you do a transformation in TMB, you can get a standard error for it using ADREPORT
   Type sdz = exp(log_sdz);
 
   REPORT( sdz );
